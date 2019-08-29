@@ -84,7 +84,7 @@ def downloadlevel(levelid):
 def delcomment(user,password,commentid):
     return Post(delcom,"accountID=%s&gjp=%s&commentID=%s" % (convertinfo("n","a",user),xor(password,"37526"),commentid))
 
-##TODO: make this function work
+##TODO: make this function work AKA spend more than 5 seconds on it
 ##def getusercomments(user):
 ##    r = Post(chist,"page=0&total=0&mode=0&userID=%s" % (convertinfo("n", "u", user)))
 ##    count = r.count("|")
