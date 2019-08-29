@@ -121,6 +121,7 @@ def stathack(user,password,stars,demons,diamonds,coins,usercoins):
     p=str("accountID=%s&gjp=%s&userName=%s&stars=%s&demons=%s&diamonds=%s&icon=1&color1=0&color2=3&iconType=0&coins=%s&userCoins=%s&special=0&gameVersion=21"%(convertinfo("n","a",user),xor(password,"37526"),user,stars,demons,diamonds,coins,usercoins))
     return Post(s,p+str("&accIcon=1&accShip=1&accBall=1&accBird=1&accDart=1&accRobot=1&accGlow=0&accSpider=1&accExplosion=1&seed=%s&seed2=%s"%("niggerfaggot",makechk(str("%s%s%s%s%s01%s111111011xI35fsAapCRg"%(convertinfo("n","a",user),usercoins,demons,stars,coins,diamonds)),"85271"))))
 
+##TODO: more testing
 def likeitem(accountid,uuid,itemid,level,udid,password,like,ty,special):
         try:
             return Post(li,"accountID=%s&gjp=%s&udid=%s&uuid=%s&itemID=%s&like=%s&type=%s&special=%s&rs=FlEaPuoMPO&chk=%s"%(accountid,xor(password,"37526"),udid,uuid,itemid,like,ty,special,makechk(str(level+itemid+like+"2FlEaPuoMPO0"+udid+uuid+"ysg6pUrtjn0J"),"58281")))
